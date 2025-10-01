@@ -41,8 +41,7 @@ import axios from 'axios'
 
 // export default FetchPosts
 
-export default function FetchPosts() {
-    return function(dispatch){
+export const  FetchPosts = () => dispatch => {
         axios.get('https://jsonplaceholder.typicode.com/posts?_limit=5')
         .then(res => {
             dispatch({
@@ -50,7 +49,7 @@ export default function FetchPosts() {
                 payload: res.data
             })
         })
-    }
+        .catch(err => console.log(err))
 }
 
 export const selectPost=(post)=>{

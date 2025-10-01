@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
-import FetchPosts from '../actions/postAction'
+import {FetchPosts} from '../actions/postAction'
 
 class ButtonComponent extends Component {
   render() {
