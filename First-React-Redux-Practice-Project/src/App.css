@@ -13,3 +13,7 @@ button{
   background-color: rgb(0, 0, 0);
   color: aliceblue;
 }
+.hover-bg:hover{
+  background-color: gray;
+  color: aliceblue;
+}

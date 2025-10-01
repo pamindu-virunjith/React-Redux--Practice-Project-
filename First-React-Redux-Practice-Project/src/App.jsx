@@ -1,6 +1,7 @@
 import './App.css'
 import ButtonComponent from './components/buttonComponent'
 import Postlist from './components/postlist'
+import SelectedPost from './components/selectedPost'
 
 function App() {
 
@@ -12,6 +13,8 @@ function App() {
       <ButtonComponent/>
       <br />
       <Postlist/>
+      <hr />
+      <SelectedPost/>
      </div>
     </>
   )
